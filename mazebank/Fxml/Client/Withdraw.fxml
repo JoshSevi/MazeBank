@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.DashboardController">
+   <Text layoutX="303.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw" textAlignment="CENTER" wrappingWidth="205.48712158203125" AnchorPane.leftAnchor="303.0" AnchorPane.topAnchor="174.0">
+      <font>
+         <Font name="System Bold" size="40.0" />
+      </font></Text>
+   <VBox alignment="CENTER" layoutX="182.0" layoutY="222.0" prefHeight="308.0" prefWidth="474.0" styleClass="new_trans_container" AnchorPane.bottomAnchor="220.0" AnchorPane.rightAnchor="194.0">
+      <Label text="Amount In $:" />
+      <TextField fx:id="amount_fld" />
+      <Label text="Message:(Optional)" />
+      <TextArea fx:id="message_fld" prefHeight="70.0" prefWidth="200.0" />
+      <Button fx:id="send_money_btn" mnemonicParsing="false" prefHeight="37.0" prefWidth="31.0" text="Send Money" translateX="80.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Button>
+   </VBox>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.DashboardController">
+   <VBox layoutX="524.0" layoutY="421.0" prefHeight="131.0" prefWidth="250.0" styleClass="new_trans_container" AnchorPane.bottomAnchor="198.0" AnchorPane.rightAnchor="76.0">
+      <TextField fx:id="amount_to_sv" layoutX="464.0" layoutY="72.0" prefHeight="26.0" prefWidth="237.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="72.0" />
+      <Button fx:id="trans_to_sv_btn" layoutX="464.0" layoutY="123.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="276.0" text="Transfer" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="123.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARROW_UP" size="20" />
+         </graphic>
+      </Button>
+   </VBox>
+   <AnchorPane layoutX="70.0" layoutY="402.0" prefHeight="150.0" prefWidth="295.0">
+      <styleClass>
+         <String fx:value="account" />
+         <String fx:value="account_gradient" />
+      </styleClass>
+      <Label fx:id="savings_bal" layoutX="14.0" layoutY="23.0" styleClass="account_balance" text="\$3 500.56" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="25.0" />
+      <Label layoutX="14.0" layoutY="82.0" styleClass="account_number" text="**** **** ****" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="14.0" />
+      <Label fx:id="savings_acc_num" layoutX="88.0" layoutY="118.0" styleClass="account_number" text="4558" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="138.0" />
+      <VBox layoutX="181.0" layoutY="15.0" prefHeight="100.0" prefWidth="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+      <FontAwesomeIconView glyphName="BANK" layoutX="258.0" layoutY="29.0" size="30" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0" />
+      <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" />
+   </AnchorPane>
+   <AnchorPane layoutX="70.0" layoutY="159.0" prefHeight="150.0" prefWidth="295.0">
+      <styleClass>
+         <String fx:value="account" />
+         <String fx:value="account_gradient" />
+      </styleClass>
+      <Label fx:id="checking_bal" layoutX="14.0" layoutY="23.0" styleClass="account_balance" text="\$3 500.56" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="25.0" />
+      <Label layoutX="14.0" layoutY="82.0" styleClass="account_number" text="**** **** ****" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="14.0" />
+      <Label fx:id="checking_acc_num" layoutX="88.0" layoutY="118.0" styleClass="account_number" text="4558" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="138.0" />
+      <VBox layoutX="181.0" layoutY="15.0" prefHeight="100.0" prefWidth="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+      <FontAwesomeIconView glyphName="BANK" layoutX="258.0" layoutY="29.0" size="30" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0" />
+      <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" />
+   </AnchorPane>
+   <VBox layoutX="524.0" layoutY="178.0" prefHeight="131.0" prefWidth="250.0" styleClass="new_trans_container">
+      <children>
+         <TextField fx:id="amount_to_sv1" layoutX="464.0" layoutY="72.0" prefHeight="26.0" prefWidth="237.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="72.0" />
+         <Button fx:id="trans_to_sv_btn1" layoutX="464.0" layoutY="123.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="276.0" text="Transfer" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="123.0">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="ARROW_DOWN" size="20" />
+            </graphic>
+         </Button>
+      </children>
+   </VBox>
+   <Text fill="#000000b5" layoutX="524.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Move Funds To Savings Account" />
+   <Text fill="#000000b5" layoutX="518.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Move Funds To Checking Account" />
+</AnchorPane>
